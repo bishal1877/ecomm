@@ -18,7 +18,7 @@ await axios.post("https://ecomm-3bxr.onrender.com//add/test", data)
         .then((response) => {
             console.log('Response from server:', response.data);
             // Optionally, you can redirect or show a success message here
-            window.location.href = "http://localhost:5173/"; // Redirect to home after adding product
+            window.location.href = "https://ecomm-2-cyzt.onrender.com"; // Redirect to home after adding product
             })
         .catch((error) => { 
             console.error('Error adding product:', error);
