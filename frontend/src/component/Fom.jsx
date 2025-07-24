@@ -14,7 +14,7 @@ export default function Fom() {
 
 let onSubmit= async (data) => {
     console.log(data);
-await axios.post("http://localhost:3000/add/test", data)
+await axios.post("https://ecomm-3bxr.onrender.com//add/test", data)
         .then((response) => {
             console.log('Response from server:', response.data);
             // Optionally, you can redirect or show a success message here
