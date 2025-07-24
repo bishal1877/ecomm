@@ -11,7 +11,7 @@ function Cont() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("https://ecomm-3bxr.onrender.com//api/test");
+        const response = await axios.get("https://ecomm-3bxr.onrender.com");
         console.log('Fetched products:', response.data); // Log the fetched data
         setProducts(response.data); // Axios puts the actual data in .data
         setLoading(false);
