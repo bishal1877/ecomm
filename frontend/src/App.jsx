@@ -13,7 +13,7 @@ function App() {
      <BrowserRouter>
 <Routes>
     <Route path="/" element={<Cd />} />
-    <Route path="/add/test" element={<Fom />} />
+    <Route path="https://ecomm-2-cyzt.onrender.com/add/test" element={<Fom />} />
 </Routes>
 </BrowserRouter>
    </div> 
