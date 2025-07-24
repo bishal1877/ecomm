@@ -18,7 +18,7 @@ function BasicExample() {
           </Nav>
         </Navbar.Collapse>
       </Container>
-      <NavLink href="https://ecomm-2-cyzt.onrender.com/add/test" style={{marginRight:'10px',color:'black'}}>
+      <NavLink to="/add/test" style={{marginRight:'10px',color:'black'}}>
       <Button>Add Product</Button>
       </NavLink>
     </Navbar>
