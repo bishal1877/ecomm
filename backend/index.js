@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
-app.get('/api/test', async (req, res) => {
+app.get('/', async (req, res) => {
   try {
     console.log('Connecting to the database...');
       const result = await sql `SELECT * FROM products`;
