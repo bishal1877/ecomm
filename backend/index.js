@@ -4,8 +4,11 @@ import cors from 'cors';
 import sql from './config/db.js';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
+import path from 'path';
 
-dotenv.config();
+
+const __dirname = path.resolve();
+dotenv.config({ path: path.join(__dirname, '../.env') });
 const app= express();
 app.use(helmet());
 app.use(cors());
@@ -63,7 +66,9 @@ app.post('/api/test', async (req, res) => {
   }
 });
 
-
+ let PORT=process.env.PORT || 3000;
+ console.log('Server is running on port:', PORT);
+ 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
