@@ -18,7 +18,7 @@ function BasicExample() {
           </Nav>
         </Navbar.Collapse>
       </Container>
-      <NavLink to="/add/test" style={{marginRight:'10px',color:'black'}}>
+      <NavLink href="/add/test" style={{marginRight:'10px',color:'black'}}>
       <Button>Add Product</Button>
       </NavLink>
     </Navbar>
