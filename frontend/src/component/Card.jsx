@@ -12,7 +12,7 @@ async function del() {
  let conf= window.confirm("Are you sure you want to delete this product?")
   if (conf) 
 {await axios.delete(`http://localhost:3000/api/test/${props.id}`);}
-window.location.href = "http://localhost:5173/"; // Redirect to home after deleting product
+window.location.href = "https://ecomm-2-cyzt.onrender.com"; // Redirect to home after deleting product
 }
 
     console.log('Card props:', props); // Log the props to see what is being passed
