@@ -10,10 +10,6 @@ let PGPASSWORD = process.env.PGPASSWORD;
 let PGDATABASE = process.env.PGDATABASE;
 let PGUSER = process.env.PGUSER;
 
-console.log('PGHOST (destructured):', PGHOST);
-console.log('PGDATABASE (destructured):', PGDATABASE);
-console.log('PGUSER (destructured):', PGUSER);
-console.log('PGPASSWORD (destructured):', PGPASSWORD);
 let con= `postgresql://${PGUSER}:${PGPASSWORD}@${PGHOST}/${PGDATABASE}?sslmode=require`;
 
 let sql = neon( 
