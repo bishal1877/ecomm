@@ -36,10 +36,14 @@ function Cont() {
     return <div>Error: {error.message}</div>;
   }
 
-  return (
+ return (
     <div className="product-list"  style={{height:"88vh" ,  display:"grid",   gridTemplateColumns:"repeat(auto-fit,minmax(0px,18rem))",gap:"15px",padding:"0px"}} >
-      {products.bata.map((item) => (
-        <Card key={item.id } name={item.name} price={item.price} image={item.image} id={item.id}  /> // Add a unique key
+      {products.bata.filter(
+        (item)=>{
+        return (item.image!="NA")
+        }
+      ) .map((item) => (
+       <Card key={item.id } name={item.name} price={item.price} image={item.image} id={item.id}  /> // Add a unique key
       ))}
     </div>
   );
