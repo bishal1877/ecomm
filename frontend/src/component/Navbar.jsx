@@ -12,8 +12,8 @@ function BasicExample() {
       <Container style={{padding: '5px',marginLeft:'6px'}}>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <NavLink href="https://ecomm-2-cyzt.onrender.com" >Home</NavLink>
-            <NavLink href="/">Link</NavLink>
+            <NavLink href="https://ecomm-2-cyzt.onrender.com"   style={{color:"white",border:"solid 3px",backgroundColor:"black", marginLeft:"9px",width:"max-content"}} >Home</NavLink>
+            <NavLink href="/"  style={{color:"white",border:"solid 3px",backgroundColor:"black", marginLeft:"9px",width:"max-content"}} >Link</NavLink>
            
           </Nav>
         </Navbar.Collapse>
