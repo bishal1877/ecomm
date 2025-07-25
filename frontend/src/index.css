@@ -5,9 +5,19 @@
      padding: 12px;
      margin: 0; 
     font-family:'Times New Roman', Times, serif; 
+    position: relative;
     font-style: italic;
-    transition-duration: 700ms;
-    transition-property: all;
-    transition-timing-function:linear;
+animation-name: middle;
+animation-timing-function: ease-in-out;
 
+animation-duration: 1800ms;    
+}
+@keyframes middle{
+    from 
+    {
+        left:100%;
+    }
+    to{
+left:0%;
+    }
 }
