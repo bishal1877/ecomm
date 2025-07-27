@@ -37,7 +37,7 @@ function Cont() {
   }
 
  return (
-    <div className="product-list"  style={{height:"88vh" ,  display:"grid",   gridTemplateColumns:"repeat(auto-fit,minmax(0px,18rem))",gap:"15px",padding:"0px"}} >
+    <div className="product-list"  style={{height:"min-content" ,  display:"grid",   gridTemplateColumns:"repeat(auto-fit,minmax(0px,18rem))",gap:"15px",padding:"0px"}} >
       {products.bata.filter(
         (item)=>{
         return (item.image!="NA")
