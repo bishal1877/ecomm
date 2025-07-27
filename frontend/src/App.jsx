@@ -7,7 +7,7 @@ import Fom from "./component/Fom.jsx";
 
 function App() {
   return(
-    <div style={{ height:"100vh"}}>
+    <div >
       <hr style={{margin:"0.9px"}}  />
     <Br/>
      <BrowserRouter>
