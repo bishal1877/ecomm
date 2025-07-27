@@ -29,6 +29,7 @@ await axios.post("https://ecomm-3bxr.onrender.com/add/test", data)
 
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
+    <div style={{height:"53vh"}}>
     <form onSubmit={handleSubmit(onSubmit)}  style={{marginTop:"30px", gap:"3rem", display:"flex", justifyContent:"center"}} >
       {/* register your input into the hook by invoking the "register" function */}
 <label htmlFor="name">Name:</label>
@@ -45,5 +46,6 @@ await axios.post("https://ecomm-3bxr.onrender.com/add/test", data)
 <br />
       <input type="submit" disabled={isSubmitting} value="Submit" style={{backgroundColor:"blue"}}   />
     </form>
+    </div>
   )
 }
