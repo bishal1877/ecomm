@@ -17,7 +17,7 @@ let onSubmit= async (data) => {
   let p=prompt("Enter password");
     if(p!=1877)
     {
-  window.location.href = "https://ecomm-2-cyzt.onrender.com";
+ alert("Wrong password");
     }
     else
     {
