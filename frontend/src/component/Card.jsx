@@ -11,10 +11,10 @@ async function del() {
   console.log('Delete button clicked');  
  let conf= window.confirm("Are you sure you want to delete this product?")
   if (conf) 
-{await axios.delete(`https://ecomm-3bxr.onrender.com/api/test/${props.id}`);}
+{await axios.delete(`https://ecomm-3bxr.onrender.com/api/test/${props.id}`);
 window.location.href = "https://ecomm-2-cyzt.onrender.com"; // Redirect to home after deleting product
 }
-
+}
   return (
     <Card style={{ width: '18vw',height:"49vh" , margin: '20px', backgroundColor: 'lightgreen', objectFit:"cover"}}>
       <Card.Img variant="top" src={props.image} style={{height:"13rem"}} />
