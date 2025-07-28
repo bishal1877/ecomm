@@ -15,7 +15,6 @@ async function del() {
 window.location.href = "https://ecomm-2-cyzt.onrender.com"; // Redirect to home after deleting product
 }
 
-    console.log('Card props:', props); // Log the props to see what is being passed
   return (
     <Card style={{ width: '18vw',height:"49vh" , margin: '20px', backgroundColor: 'lightgreen', objectFit:"cover"}}>
       <Card.Img variant="top" src={props.image} style={{height:"13rem"}} />
