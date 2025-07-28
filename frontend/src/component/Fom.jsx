@@ -15,7 +15,6 @@ export default function Fom() {
 let onSubmit= async (data) => {
   try{
   let p=prompt("Enter password");
-    console.log(data,"ehfr4 ergf6e eyfdeg",p);
     if(p!=1877)
     {
   window.location.href = "https://ecomm-2-cyzt.onrender.com";
