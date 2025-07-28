@@ -13,19 +13,27 @@ export default function Fom() {
 
 
 let onSubmit= async (data) => {
-    console.log(data);
-await axios.post("https://ecomm-3bxr.onrender.com/add/test", data)
+  try{
+  let p=prompt("Enter password");
+    console.log(data,"ehfr4 ergf6e eyfdeg",p);
+    if(p!=1877)
+    {
+  window.location.href = "https://ecomm-2-cyzt.onrender.com";
+    }
+    else
+    {
+      await axios.post("https://ecomm-3bxr.onrender.com/add/test", data)
         .then((response) => {
             console.log('Response from server:', response.data);
-            // Optionally, you can redirect or show a success message here
-            window.location.href = "https://ecomm-2-cyzt.onrender.com"; // Redirect to home after adding product
-            })
-        .catch((error) => { 
-            console.error('Error adding product:', error);
-            // Optionally, you can show an error message to the user
-        })
 
+         window.location.href = "https://ecomm-2-cyzt.onrender.com"; // Redirect to home after adding product
+            })}
+          }
+        catch(error) { 
+            console.error('Error adding product:', error);   
+        }
 };
+
 
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
