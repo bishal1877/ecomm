@@ -1,1 +1,1 @@
-password is 1877
+password is 1877 for adding product
